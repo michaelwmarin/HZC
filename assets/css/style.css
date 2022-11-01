@@ -38,15 +38,23 @@ body {
     background-color: #15191C;
     width: 75vw;
     height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: 1s;
 }
 
-.menu-lateral_logo {
+.menu-lateral--ativo {
+    left: 0;
+    transition: 1s;
+}
+
+.menu-lateral__logo {
     width: 118px;
     align-self: center;
     padding: 16px;
 }
 
-.menu_link {
+.menu__link {
     height: 64px;
     color: #95999C;
     padding: 64px;
@@ -54,13 +62,13 @@ body {
     align-items: center;
 }
 
-.menu-lateral_link-ativo {
+.menu-lateral__link-ativo {
     color: #FFFFFF;
     padding-left: 56px;
     border-left: 8px solid #FFFFFF;
 }
 
-.menu_link::before {
+.menu__link::before {
     content: "";
     width: 24px;
     height: 24px;
@@ -69,26 +77,108 @@ body {
     left: 24px;
 }
 
-.menu_link--início::before {
+.menu__link--início::before {
 content: "\e902";
 }
 
-.menu_link--vídeos::before {
+.menu__link--vídeos::before {
     content: "\e90e";
 }
 
-.menu_link--picos::before {
+.menu__link--picos::before {
     content: "\e909";
-}
+}   
 
-.menu_link--integrantes::before {
+.menu__link--integrantes::before {
     content: "\e903";
 }
 
-.menu_link--camisas::before {
+.menu__link--camisas::before {
     content: "\e900";
 }
 
-.menu_link--pinturas::before {
+.menu__link--pinturas::before {
     content: "\e90a";
+}
+
+.principal {
+    padding: 24px 16px;
+}
+
+.titulo-pagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cartao {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+
+.cartao__conteudo {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cartao__destaque {
+    grid-column: span 2;
+}
+
+.cartao__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao__perfil {
+    color: #95999C;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao__info {
+    display: flex;
+    align-items: center;
+    color: #95999C;
+}
+
+.cartao__info--tempo::before {
+    content: "\e90c";
+    margin-right: 8px;
+}
+
+.cartao__info--visualizacao::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.cartao__botao {
+    display: flex;
+    justify-content: center;
+    background-color: #0480DC;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.cartao__botao--play::before {
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--destaque {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.cartao__botao--destaque ::before {
+    margin-right: 8px;
+}
+
+.cartao__destaque {
+    grid-column: span 2;
 }

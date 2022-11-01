@@ -12,22 +12,35 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-<body>
-    <header class="cabecalho">
-        <button class="cabecalho_menu" arial-label="Menu"><i></i></button>
-        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho_logo">
-        <button class="cabecalho_notificacao" aria-label="Notificação"><i></i></button>
-    </header>
-    <main>
-        <nav class="menu-lateral">
-            <img src="assets/img/logo.svg" alt="logotipo da HZC" class="menu-lateral_logo">
-            <a href="#" class="menu_link menu_link--início menu-lateral_link-ativo">Início</a>
-            <a href="#" class="menu_link menu_link--vídeos">Vídeos</a>
-            <a href="#" class="menu_link menu_link--picos">Picos</a>
-            <a href="#" class="menu_link menu_link--integrantes">Integrantes</a>
-            <a href="#" class="menu_link menu_link--camisas">Camisas</a>
-            <a href="#" class="menu_link menu_link--pinturas">Pinturas</a>
+    <body>
+        <header class="cabecalho">
+            <button class="cabecalho_menu" arial-label="Menu"><i></i></button>
+            <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho_logo">
+            <button class="cabecalho_notificacao" aria-label="Notificação"><i></i></button>
+        </header>
+        <nav class="menu-lateral menu-lateral--ativo">
+            <img src="assets/img/logo.svg" alt="logotipo da HZC" class="menu-lateral__logo">
+            <a href="#" class="menu__link menu__link--início menu-lateral__link-ativo">Início</a>
+            <a href="#" class="menu__link menu__link--vídeos">Vídeos</a>
+            <a href="#" class="menu__link menu__link--picos">Picos</a>
+            <a href="#" class="menu__link menu__link--integrantes">Integrantes</a>
+            <a href="#" class="menu__link menu__link--camisas">Camisas</a>
+            <a href="#" class="menu__link menu__link--pinturas">Pinturas</a>
         </nav>
-    </main>
-</body>
-</html> 
+        <main class="principal">
+            <h2 class="titulo-pagina">Início</h2>
+            <article class="cartao">
+                <img src="assets/img/banner-mobile_1.png" alt="Banner do cartao" calss="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__destaque">Vídeo em destaque</p>
+                    <h3 class="cartao__titulo">HZC - Título</h3>
+                    <p class="cartao__perfil">Bruno Lopez</p>
+                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                    <p class="cartao__info cartao__info--visualizacao">33 visualização</p>
+                    <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+                </div>
+            </article>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
