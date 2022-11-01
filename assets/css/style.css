@@ -39,12 +39,12 @@ body {
     width: 75vw;
     height: 100vh;
     position: absolute;
-    left: -100vw;
+    left: 0vw;
     transition: 1s;
 }
 
 .menu-lateral--ativo {
-    left: 0;
+    left: -100;
     transition: 1s;
 }
 
