@@ -1,103 +1,87 @@
-# Guia de estilos
+# HZC - Interface Responsiva
 
-Toda a estilização que será usada no projeto dentro do figma.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-[Link do projeto no figma](https://www.figma.com/file/ibWktwVpnog76rMYOdVhks/Dispondo-elementos-com-flexbox-e-grid?node-id=54%3A2358)
+Este é um projeto de front-end que implementa uma interface moderna e responsiva para a plataforma "HZC". O layout foi construído com base em um protótipo do Figma, utilizando **CSS Flexbox e Grid** para criar uma experiência de usuário fluida e adaptável a diferentes tamanhos de tela.
 
-## Fonte
+O site foi projetado para ser uma central de conteúdo, exibindo vídeos, picos de skate, integrantes, produtos e artes.
 
-```html
-Open Sans:
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-```
+---
 
-## Cores
+## ✨ Funcionalidades Principais
 
-corpo: `#1D232A`
+-   **Layout Responsivo**: A interface se adapta perfeitamente a dispositivos móveis e desktops.
+-   **Menus Interativos**: O site possui menus laterais para navegação e notificações, controlados com JavaScript para uma interação suave.
+-   **Componentização com Cards**: O conteúdo é apresentado em formato de "cards", um padrão de design moderno que organiza a informação de forma clara e visualmente agradável.
+-   **Fonte de Ícones Personalizada**: Utiliza uma fonte de ícones customizada para garantir consistência visual e performance.
 
-cabeçalho: `#1D232A`
+---
 
-cabeçalho mobile: `#15191C`
+## 🛠️ Tecnologias Utilizadas
 
-menu lateral: `#15191C`
+-   **HTML5**: Para a estrutura semântica do conteúdo.
+-   **CSS3**:
+    -   **Flexbox e Grid**: Para a criação de layouts complexos e responsivos.
+    -   **@font-face**: Para a importação da fonte de ícones personalizada.
+    -   **Animações e Transições**: Para os menus laterais.
+-   **JavaScript**: Para a manipulação do DOM e a criação da interatividade dos menus.
 
-cartão: `#2C343A`
+---
 
-fonte: `#FFFFFF`
+## 🚀 Como Executar
 
-fonte alternativa: `#95999C`
+Por ser um projeto de front-end estático, você pode visualizá-lo facilmente:
 
-links: `#0480DC`
+1.  Clone este repositório para a sua máquina local.
+2.  Abra o arquivo `index.html` no seu navegador de preferência.
 
-botão: `#0480DC`
+---
 
-sombras: `0px 4px 4px rgba(0, 0, 0, 0.16)`
+## 🎨 Guia de Estilos do Projeto
 
-## Ícones
+Este projeto foi desenvolvido seguindo um guia de estilos detalhado, que define a identidade visual da aplicação.
 
-Estão dentro do arquivo de fonte `icones.ttf`. Para usar, primeiro importe a fonte no projeto usando `@font-face` e depois utilize os códigos abaixo para exibir o ícone.
+<details>
+<summary><strong>Clique para expandir o Guia de Estilos</strong></summary>
 
-```css
-@font-face {
-    font-family: 'icones';
-    src: url(../font/icones.ttf);
-}
-```
+### Fonte
+- **Open Sans** (Regular 400, Semi-Bold 600, Bold 700)
 
-> Cuidado com a localização do arquivo `icones.ttf`
+### Cores
+- **Corpo**: `#1D232A`
+- **Cabeçalho**: `#1D232A` (desktop), `#15191C` (mobile)
+- **Menu Lateral**: `#15191C`
+- **Cartão**: `#2C343A`
+- **Fonte Principal**: `#FFFFFF`
+- **Fonte Secundária**: `#95999C`
+- **Links/Botões**: `#0480DC`
+- **Sombra**: `0px 4px 4px rgba(0, 0, 0, 0.16)`
 
-Camisas = `\e900`
+### Ícones
+A fonte de ícones (`icones.ttf`) contém os seguintes glifos:
+- `\e900` - Camisas
+- `\e902` - Início
+- `\e903` - Integrantes
+- `\e904` - Menu
+- `\e906` - Notificação
+- `\e909` - Picos
+- `\e90a` - Pinturas
+- `\e90b` - Play
+- `\e90c` - Relógio
+- `\e90e` - Vídeos
+- `\e90f` - Visualização
 
-Carrinho = `\e901`
+### Espaçamentos
+- **Interno (botão)**: `8px`
+- **Entre elementos**: `16px` / `8px`
+- **Interno (corpo)**: `16px`
 
-Inicio = `\e902`
+### Tamanhos (Breakpoints)
+- **Mobile**: `360px`
+- **Desktop**: `1440px`
 
-Integrantes = `\e903`
+[Link do projeto no Figma](https://www.figma.com/file/ibWktwVpnog76rMYOdVhks/Dispondo-elementos-com-flexbox-e-grid?node-id=54%3A2358)
 
-Menu = `\e904`
-
-Moeda = `\e905`
-
-Notificação = `\e906`
-
-Pico = `\e908`
-
-Picos = `\e909`
-
-Pinturas = `\e90a`
-
-Play = `\e90b`
-
-Relogio = `\e90c`
-
-Seta-baixo = `\e90d`
-
-Videos = `\e90e`
-
-Visualizacao = `\e90f`
-
-## Espaçamentos
-
-Espaço interno botão: `8px`
-
-Espaço entre elementos do botão: `8px`
-
-Espaço entre elementos: `16px/8px`
-
-Espaçamento interno do corpo: `16px`
-
-Espaçamento entre o título do cartão de recentes e seus itens: `24px`
-
-## Tamanhos
-
-Tamanho do dispositivo mobile: `360px`
-
-Tamanho do dispositivo desktop: `1440px`
-
-Largura máxima do conteúdo principal: `1120px`
-
-Largura máxima de um cartão desktop: `256px`
-
-Altura mínima de um cartão: `320px`
+</details>
